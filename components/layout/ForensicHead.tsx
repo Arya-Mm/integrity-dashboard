@@ -4,7 +4,7 @@ import { Canvas, useFrame } from "@react-three/fiber"
 import { useGLTF, Environment, Float, Html } from "@react-three/drei"
 import { Suspense, useEffect, useRef } from "react"
 import * as THREE from "three"
-import { useSystemBoot } from "../system/SystemBoot"
+
 
 /* ---------------------------------- */
 /* Types */
@@ -100,7 +100,7 @@ export default function ForensicHead({
 }: {
   forensic?: ForensicState
 }) {
-  const { markReady } = useSystemBoot()
+
 
   return (
     <div className="w-full h-105 md:h-135 rounded-xl overflow-hidden border border-indigo-500/30 bg-black">
